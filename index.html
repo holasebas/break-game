@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="h-100">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="d-flex h-100">
+
+<div id="shadow" class="hide"></div>
+<div id="loader_view" class="d-flex justify-content-center align-items-center  h-100 w-100">
+    <div id="loader_container" class=" d-flex justify-content-center align-items-center flex-column">
+        <!-- <img id="l1" class="my-3" src="assets/nombre_Juego.png" alt="">  -->
+        <div id="l2"></div>
+        <img id="loader" class="my-3" src="assets/loader/0.png" alt="">
+    </div>
+   
+</div>
+<div class="gameContainer d-flex flex-column h-100 w-100 hide">
+    <div id="mano">
+        <img id="ojuela" src="assets/Ceriales1/10.png" alt="">
+        <img id="hand" src="assets/mano.png" alt="">
+    </div>
+    <div class="stage d-flex flex-column check">
+        <div class="container d-flex topUI ">
+            <div class="col mobile">
+                <img class="KB2S_logo d-flex" src="assets/Logo_Kelloggs.png" alt="">
+            </div>
+            <!-- <div class="col mobile">
+                <img class="game_name d-flex mx-auto" src="assets/Construck.png" alt="">
+            </div> -->
+            <div class="d-flex col justify-content-center">
+                <div id="UI" class="d-flex">
+                    <div id="timer">
+                        <img src="assets/Timer.png" alt="">
+                        <div id="clock" class="clip">
+                            <div id="pie1" class="pie"></div>
+                            <div id="pie2" class="pie hide"></div>
+                        </div>
+                    </div>
+                    <div id="nivel">
+                        <img src="assets/Nivel_1.png" alt="">
+                    </div>
+                    <div id="vidas"><img src="#" alt=""> </div>
+                    <div id="cta_instruccions"><img src="assets/instrucciones.png" alt=""> </div>
+                    <div id="cta_sonido"><img src="assets/Sonido.png" alt=""> </div>
+                </div>
+            </div>
+        </div>
+        <div class=" p0 check w-100">
+            <div id="targets_container" class="d-flex mx-auto">
+                <div class="d-flex col p-0">
+                    <div id="target-1" class="target drop_target mx-auto" data-drop="1">
+                        <img class="semic1" src="assets/Circulo_arriba.png" alt="">
+                        <img class="semic2" src="assets/Circulo_abajo.png" alt="">
+                        <img class="mx-auto" id="tono" src="assets/Tigre_tono.png" alt="">
+
+                    </div>
+                    <div class="counter" id="cTono">
+                        <p></p>
+                    </div>
+                </div>
+                <div class="d-flex col p-0">
+                    <div id="target-2" class="target drop_target mx-auto" data-drop="2">
+                        <img class="semic1" src="assets/Circulo_arriba.png" alt="">
+                        <img class="semic2" src="assets/Circulo_abajo.png" alt="">
+                        <img class="" id="melvin" src="assets/melvin.png" alt="">
+                    </div>
+                    <div class="counter" id="cMelvin">
+                        <p></p>
+                    </div>
+                </div>
+                <div class="d-flex col p-0">
+                    <div id="target-3" class=" target drop_target mx-auto" data-drop="3">
+                        <img class="semic1" src="assets/Circulo_arriba.png" alt="">
+                        <img class="semic2" src="assets/Circulo_abajo.png" alt="">
+                        <img class="mx-auto" id="cornelio" src="assets/Cornelio.png" alt="">
+                    </div>
+                    <div class="counter" id="cCornelio">
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-flex p-0 check mt-auto w-100">
+            <div id="drags_container" class="mx-auto check">
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="how_view" class="d-flex justify-content-center align-items-center h-100 w-100 none" oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
+    <div id="how" class="d-flex justify-content-center align-items-center" style="position: relative">
+        <img id="cta_close" src="assets/Cerrar.png" alt="">
+        <img id="popup" src="assets/Como_jugar.png" width="650px" alt="">
+    </div>
+</div>
+
+
+<!-- @Html.Partial("_WinPartial")
+
+@Html.Partial("_LosePartial")
+
+
+@using (Html.BeginForm(null, null, FormMethod.Post, new { id = "__AjaxAntiForgeryForm" }))
+{
+    @Html.AntiForgeryToken()
+}
+
+@section Scripts
+{ -->
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/TweenMax.min.js"></script>
+    <script src="js/pep.js"></script>
+    <script src="js/assets.js"></script>
+    <script src="js/soundjs.min.js"></script>
+    <script src="js/main.js"></script>
+    
+</body>
+</html>
+
